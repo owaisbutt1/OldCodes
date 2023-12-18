@@ -1,0 +1,321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0073)https://docs.oracle.com/cd/E19253-01/817-6223/chp-typeopexpr-2/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.truste_caIcon_display {display: inline-block !important;}</style><style type="text/css">.truste_cursor_pointer {cursor: pointer;}.truste_border_none {border: none;}</style><link type="text/css" rel="stylesheet" href="./data types and its types_files/default.css"><link type="text/css" rel="stylesheet" href="./data types and its types_files/www.css"><link type="text/css" rel="stylesheet" href="./data types and its types_files/dsc.css"><script type="text/javascript" async="" src="./data types and its types_files/infinity_common.js.download"></script><script language="javascript1.2" type="text/javascript" src="./data types and its types_files/sniff.js.download"></script><script>window.ohcglobal || document.write('<script src="/en/dcommon/js/global.js">\x3C/script>')</script><script src="./data types and its types_files/global.js.download"></script><style id="banner_footer_style" type="text/css">#footer-banner ul li:nth-child(2) {  margin-left: 0;}#footer-banner {  z-index: 9999;  position: fixed;  margin: 0 auto 0 auto;  bottom: 0; left: 0; right: 0;  background-color: #EBEBEB !important;  border-top: 1px solid #ACB7BF;  color: #1958AA;  padding: 0.0em 1em;  text-align: center;  font-size: 12px !important;  line-height: 15px;  font-weight: normal;  font-family: Arial;  clear: both;}#teconsent {  display: inline-block;}#footer-banner ul {  list-style: none;  font-size: 12px !important;  padding: 0;  margin: 0;  margin-right: 20px;}#footer-banner li {  display: inline-block;}#footer-banner li + li:before {  content: "|";  margin-right: 4px;  margin-left: 4px;  color: #aaa;}#footer-banner a {  color: #1958AA;  text-decoration: none;  font-size: 12px !important;}#footer-banner a:focus, #footer-banner a:hover {  color: #1958AA;  text-decoration: underline;}</style><script type="text/javascript" src="./data types and its types_files/ora_docs.js.download"></script><script type="text/javascript" src="./data types and its types_files/odc.js.download"></script><script type="text/javascript" src="./data types and its types_files/analytics-production.js.download" async="true" defer="true"></script><script type="text/javascript" src="./data types and its types_files/common.js.download" async="true" defer="true"></script><script type="text/javascript" src="./data types and its types_files/analytics.js.download" async="true" defer="true"></script></head><body><div id="a0v0" class="a0 a0v0"><div class="a2w0"><div id="a2v7" class="a2"><div class="a2w1"><div class="a2w2"><div class="a2w3"><div class="a2w4"><div class="a2topiclinks"><div class="a2x1"></div><a id="sunlogo" title="Oracle Home Page" href="http://www.oracle.com/"><img width="98" height="58" border="0" alt="Oracle Homeage" src="./data types and its types_files/a.gif"></a><img width="1" height="33" border="0" alt="test" src="./data types and its types_files/a.gif" id="venuespacer"></div></div></div></div></div></div></div><div id="breadcrumb"><a href="http://www.oracle.com/technetwork/indexes/documentation/index.html">Documentation Home</a> &nbsp;&gt; <a href="https://docs.oracle.com/cd/E19253-01/817-6223/index.html">Solaris Dynamic Tracing Guide </a>  &nbsp;&gt; <a href="https://docs.oracle.com/cd/E19253-01/817-6223/6mlkidlfa/index.html">Chapter&nbsp;2 Types, Operators, and Expressions </a>   &nbsp;&gt; Data Types and Sizes</div><br><div class="pagetitle" id="sharepage">Solaris Dynamic Tracing Guide</div><div class="d8 d8v1" style="margin: 10px;"><div class="d8w1"><div class="d8w2"><div class="d8w3"><div class="d8w4"><ul><li class="d8left"><a href="https://docs.oracle.com/cd/E19253-01/817-6223/chp-typeopexpr-1/index.html"><em>Previous</em>: Identifier Names and Keywords</a></li><li class="d8right"><a href="https://docs.oracle.com/cd/E19253-01/817-6223/chp-typeopexpr-3/index.html"><em>Next</em>: Constants</a></li></ul></div></div></div></div></div><div class="pc11 imgMax-590" style="margin: 10px;"><a xmlns:str="http://xml.apache.org/xalan/java/java.lang.String" name="6mlkidlfd"></a><h1 class="sol">Data Types and Sizes</h1>
+<p>D provides fundamental data types for integers and floating-point constants. Arithmetic may only be performed on integers in D programs. Floating-point constants may be used to initialize data structures, but floating-point arithmetic is not permitted in D. D provides a 32-bit and 64-bit data model for use in writing programs. The data model used when executing your program is the native data model associated with the active operating system kernel. You can determine the native data model for your system using <kbd>isainfo</kbd> <kbd><b>-b</b></kbd>.</p>
+<p>The names of the integer types and their sizes in each of the two data models are shown in the following table. Integers are always represented in twos-complement form in the native byte-encoding order of your system.</p>
+<a name="tbl-ints"></a>Table 2–2  D Integer Data Types<table width="100%" cellpadding="10" cellspacing="0" border="2">
+<caption>
+<b></b>
+</caption>
+<thead>
+<tr>
+<th scope="col" align="left" valign="top">
+<p>Type Name&nbsp;</p>
+
+</th><th scope="col" align="left" valign="top">
+<p>32–bit Size&nbsp;</p>
+
+</th><th scope="col" align="left" valign="top">
+<p>64–bit Size&nbsp;</p>
+
+</th>
+</tr>
+
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>char</tt>
+</p>
+
+</td><td align="left" valign="top">
+<p>1 byte&nbsp;</p>
+
+</td><td align="left" valign="top">
+<p>1 byte&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>short</tt>
+</p>
+
+</td><td align="left" valign="top">
+<p>2 bytes&nbsp;</p>
+
+</td><td align="left" valign="top">
+<p>2 bytes&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>int</tt>
+</p>
+
+</td><td align="left" valign="top">
+<p>4 bytes&nbsp;</p>
+
+</td><td align="left" valign="top">
+<p>4 bytes&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>long</tt>
+</p>
+
+</td><td align="left" valign="top">
+<p>4 bytes&nbsp;</p>
+
+</td><td align="left" valign="top">
+<p>8 bytes&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>long long</tt>
+</p>
+
+</td><td align="left" valign="top">
+<p>8 bytes&nbsp;</p>
+
+</td><td align="left" valign="top">
+<p>8 bytes&nbsp;</p>
+
+</td>
+</tr>
+
+</tbody>
+</table>
+<p> 
+</p><p>Integer types may be prefixed with the <tt>signed</tt> or <tt>unsigned</tt> qualifier. If no sign qualifier is present, the type is assumed to be signed. The D compiler also provides the type aliases listed in the following table:</p>
+<a name="tbl-intdefs"></a>Table 2–3  D Integer Type Aliases<table width="100%" cellpadding="10" cellspacing="0" border="2">
+<caption>
+<b></b>
+</caption>
+<thead>
+<tr>
+<th scope="col" align="left" valign="top">
+<p>Type Name&nbsp;</p>
+
+</th><th scope="col" align="left" valign="top">
+<p>Description&nbsp;</p>
+
+</th>
+</tr>
+
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>int8_t</tt>
+</p>
+
+</td><td align="left" valign="top">
+<p>1 byte signed integer&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>int16_t</tt>
+</p>
+
+</td><td align="left" valign="top">
+<p>2 byte signed integer&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>int32_t</tt>
+</p>
+
+</td><td align="left" valign="top">
+<p>4 byte signed integer&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>int64_t</tt>
+</p>
+
+</td><td align="left" valign="top">
+<p>8 byte signed integer&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>intptr_t</tt>
+</p>
+
+</td><td align="left" valign="top">
+<p>Signed integer of size equal to a pointer&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>uint8_t</tt>
+</p>
+
+</td><td align="left" valign="top">
+<p>1 byte unsigned integer&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>uint16_t</tt>
+</p>
+
+</td><td align="left" valign="top">
+<p>2 byte unsigned integer&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>uint32_t</tt>
+</p>
+
+</td><td align="left" valign="top">
+<p>4 byte unsigned integer&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>uint64_t</tt>
+</p>
+
+</td><td align="left" valign="top">
+<p>8 byte unsigned integer&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>uintptr_t</tt>
+</p>
+
+</td><td align="left" valign="top">
+<p>Unsigned integer of size equal to a pointer&nbsp;</p>
+
+</td>
+</tr>
+
+</tbody>
+</table>
+<p> 
+</p><p>These type aliases are equivalent to using the name of the corresponding base type in the previous table and are appropriately defined for each data model. For example, the type name <tt>uint8_t</tt> is an alias for the type <tt>unsigned char</tt>. See <a href="https://docs.oracle.com/cd/E19253-01/817-6223/chp-types/index.html">Chapter&nbsp;8, Type and Constant Definitions</a> for information on how to define your own type aliases for use in your D programs.</p>
+<p>D provides floating-point types for compatibility with ANSI-C declarations and types. Floating-point operators are not supported in D, but floating-point data objects can be traced and formatted using the <kbd><b>printf()</b></kbd> function. The floating-point types listed in the following table may be used:</p>
+<a name="tbl-fps"></a>Table 2–4  D Floating-Point Data Types<table width="100%" cellpadding="10" cellspacing="0" border="2">
+<caption>
+<b></b>
+</caption>
+<thead>
+<tr>
+<th scope="col" align="left" valign="top">
+<p>Type Name&nbsp;</p>
+
+</th><th scope="col" align="left" valign="top">
+<p>32–bit Size&nbsp;</p>
+
+</th><th scope="col" align="left" valign="top">
+<p>64–bit Size&nbsp;</p>
+
+</th>
+</tr>
+
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>float</tt>
+</p>
+
+</td><td align="left" valign="top">
+<p>4 bytes&nbsp;</p>
+
+</td><td align="left" valign="top">
+<p>4 bytes&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>double</tt>
+</p>
+
+</td><td align="left" valign="top">
+<p>8 bytes&nbsp;</p>
+
+</td><td align="left" valign="top">
+<p>8 bytes&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>long double</tt>
+</p>
+
+</td><td align="left" valign="top">
+<p>16 bytes&nbsp;</p>
+
+</td><td align="left" valign="top">
+<p>16 bytes&nbsp;</p>
+
+</td>
+</tr>
+
+</tbody>
+</table>
+<p> 
+</p><p>D also provides the special type <tt>string</tt> to represent ASCII strings. Strings are discussed in more detail in <a href="https://docs.oracle.com/cd/E19253-01/817-6223/chp-strings/index.html">Chapter&nbsp;6, Strings</a>.</p>
+</div><div class="d8 d8v1" style="margin: 10px;"><div class="d8w1"><div class="d8w2"><div class="d8w3"><div class="d8w4"><ul><li class="d8left"><a href="https://docs.oracle.com/cd/E19253-01/817-6223/chp-typeopexpr-1/index.html"><em>Previous</em>: Identifier Names and Keywords</a></li><li class="d8right"><a href="https://docs.oracle.com/cd/E19253-01/817-6223/chp-typeopexpr-3/index.html"><em>Next</em>: Constants</a></li></ul></div></div></div></div></div><div class="a5 a5v0" id="a5">
+<ul>
+    <li class="copyright">© 2010, Oracle Corporation and/or its affiliates</li>
+</ul>
+</div>
+</div><div id="footer-banner" style="display: inline-block;"><ul><li><div id="teconsent" consent="undefined" aria-label="Open Cookie Preferences Modal" class="truste_caIcon_display" role="complementary"><script async="async" type="text/javascript" crossorigin="" importance="high" src="./data types and its types_files/v1.7-9751"></script><a role="link" id="icon-id03150906579477595" tabindex="0" lang="en" aria-haspopup="true" aria-label="Cookie Preferences" class="truste_cursor_pointer">Cookie Preferences</a></div></li><li><a id="adchoices" class="new-window" target="_blank" href="https://www.oracle.com/legal/privacy/marketing-cloud-data-cloud-privacy-policy.html#12">Ad Choices</a></li></ul></div><script type="text/javascript" src="./data types and its types_files/notice" id="truste_0.9308886762020141"></script><iframe name="trustarc_notice" id="trustarcNoticeFrame" title="Trustarc Cross-Domain Consent Frame" src="./data types and its types_files/get.html" style="display: none;"></iframe><script src="./data types and its types_files/ora_code_docs.js.download"></script><script src="./data types and its types_files/ora_code.js.download"></script></body></html>

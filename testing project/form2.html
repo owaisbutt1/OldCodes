@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#checkAll").change(function () {
+                $("input:checkbox").prop('checked', $(this).prop("checked"));
+            });
+            $('.chk').on('click', function () {
+                if ($('.chk:checked').length == $('.chk').length) {
+                    $('#checkAll').prop('checked', true);
+                } else {
+                    $('#checkAll').prop('checked', false);
+                }
+            });
+            $(document).ready(function () {
+                $("#formButton1").click(function () {
+                    $("#form2").show("display","block");
+                });
+            });
+
+        });
+
+
+
+    </script>
+    <title>form2</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <form action="" id="colpart1">
+            <div class="form-group row">
+                <div class="col-md-12">
+                    <div class="form-group row">
+                        <div class="col-md-4 d-md-flex justify-content-end">
+                            <div class=" form-group-col ">
+                                <label for="">HOBBIES :</label>
+                                <div class="d-flex flex-column ">
+                                    <div>
+                                        <input type="checkbox" class="form-check-input" id="checkAll" name="selectAll">
+                                    </div>
+                                    <div>
+                                        <label for="musicCheck" class="form-check-label">Music :</label>
+                                        <input type="checkbox" class="form-check-input chk" id="musicCheck"
+                                            value="checkbox1">
+                                    </div>
+                                    <div>
+                                        <label for="sportCheck" class="form-check-label ">Sports :</label>
+                                        <input type="checkbox" class="form-check-input chk" id="musicCheck"
+                                            value="checkbox2">
+                                    </div>
+                                    <div>
+                                        <label for="bookCheck" class="form-check-label">Book reading :</label>
+                                        <input type="checkbox" class="form-check-input chk" id="bookCheck"
+                                            value="checkbox3">
+                                    </div>
+                                    <div id="form2">
+                                        <label for="bookCheck" class="form-check-label">playing :</label>
+                                        <input type="checkbox" class="form-check-input chk " id="bookCheck"
+                                            value="checkbox3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group row">
+                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                    <option selected>please select</option>
+                                    <option value="1">soccer</option>
+                                    <option value="2">cricket</option>
+                                    <option value="3">table tennis</option>
+                                </select>
+                                <div class="row mt-3">
+                                    <div class="col-md-12">
+                                        <div class="d-md-flex justify-content-evenly">
+                                            <div class="">
+                                                <input type="text" name="fname" id="fname" value="" />
+                                            </div>
+                                            <div>
+                                                <button type="button" class="btn btn-primary"id="formButton1">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4 col-sm-2">
+                            <div class="dropdown d-md-flex  justify-content-start">
+                                <button type="button" class="btn btn-primary btn-responsive dropdown-toggle"
+                                    data-bs-toggle="dropdown">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Link 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" row">
+                <div class="col-sm-2 m-auto">
+                    <div class="row d-md-flex justify-content-center">
+                        <div class=" form-group row">
+                            <button type="submit" class="btn btn-primary buttoncss">Submit</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

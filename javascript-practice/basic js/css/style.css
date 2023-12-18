@@ -1,0 +1,130 @@
+.demo1{
+    width:200px;
+    height:200px;
+    margin:200px 0 0 125px;
+    background-color: green;
+}
+#img1{
+    width:200px;
+    height:200px;
+    margin:0px 0px 0px 0px;
+    filter:grayscale(0%);
+   
+}
+#head{
+    background-color: pink;
+    padding: 10px 0px; 
+    margin-bottom: 0px;  
+}
+.aside{
+    float:right;
+    width:500px;
+    background-color: gray;
+    padding:20px;
+
+}
+nav ul li{
+    list-style:none;
+    /* padding-top:10px; */
+    padding: 0px 20px 0px 50px;
+
+
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    font-weight:700;
+    font-size:20px;
+    
+}
+nav ul {
+    display:flex;
+    flex-direction:row;
+    justify-content:end;
+    width:100%;
+}
+nav{
+    background-color: aqua;
+    margin-top:0px;
+    padding: 1px;
+    display:flex;
+    flex-direction:row;
+    width: 100%;
+ 
+}
+.section{
+    display: flex;
+
+}
+.sub-section{
+    width:80%;
+    background-color: burlywood;
+    padding: 20px;
+}
+.WOW{
+    background-color: black;
+    color:white;
+}
+.chngs{
+    background-color: green;
+    color:black; 
+}
+.mycss{
+    background-color:antiquewhite;
+    color:black;
+    border:2px solid black;
+}
+
+.cssmy{
+    background-color:rgb(224, 116, 7);
+    color:rgb(255, 255, 255);
+    border:2px solid black;
+    
+}
+#grand-parent{
+background-color: pink;
+width:800px;
+max-width: 100%;
+
+
+}
+#parent{
+    background-color: rgb(242, 169, 79);
+    display: flex;
+    flex-direction: row;
+    /* padding:20px; */
+
+}
+.child{
+background-color: aquamarine;
+border: 2px solid blue;
+
+margin-top:40px;
+}
+
+#attach{
+width:500px;
+max-width: 100%;
+height:500px;
+background-color: lightseagreen;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

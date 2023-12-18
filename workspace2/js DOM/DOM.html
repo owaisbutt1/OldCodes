@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="css/style.css" />
+   
+
+    <title>DOM in detail</title>
+  </head>
+  <body>
+    <div id="div1">
+      <h1 id="heading1">starting of DOM</h1>
+      <p id="paraline">hi everyone how r u?</p>
+    </div>
+    <br /><br />
+    <div id="parent">
+      <div id="ankr">
+        <a href="#" class="ankr1">iam the loser</a>
+        <a href="#" class="ankr1">iam the loser</a>
+        <a href="#" class="ankr1">iam the loser</a>
+        <a href="#" class="ankr1">iam the loser</a>
+        <a href="#" class="ankr1">iam the loser</a>
+      </div>
+      <br />
+
+      <form action="">
+        <input type="text" />
+        <input type="submit" />
+      </form>
+      <br />
+    </div>
+    <br />
+    <div>
+      <table class="table1 tab1">
+        <tr class="table1 tab2 tab3">
+          <th class="table1">NAME</th>
+          <th class="table1">AGE</th>
+          <th class="table1">GENDER</th>
+          <th class="table1">WORK</th>
+          <th class="table1">HOBBY</th>
+        </tr>
+        <tr class="table1 tab3">
+          <td class="table1">OWAIS</td>
+          <td class="table1">20</td>
+          <td class="table1">MALE</td>
+          <td class="table1">DEVELOPER</td>
+          <td class="table1">FALCONERY</td>
+        </tr>
+        <tr class="table1 tab2 tab3">
+          <td class="table1">RAZA</td>
+          <td class="table1">23</td>
+          <td class="table1">MALE</td>
+          <td class="table1">LECTURER</td>
+          <td class="table1">BOOKREADER</td>
+        </tr>
+        <tr class="table1 tab3">
+          <td class="table1">HUMNA</td>
+          <td class="table1">25</td>
+          <td class="table1">FEMALE</td>
+          <td class="table1">PLAYER</td>
+          <td class="table1">RUNNING</td>
+        </tr>
+        <tr class="table1 tab2 tab3">
+          <td class="table1">ZOYA</td>
+          <td class="table1">22</td>
+          <td class="table1">FEMALE</td>
+          <td class="table1">LECTURER</td>
+          <td class="table1">WRITING</td>
+        </tr>
+      </table>
+      <br /><br />
+      <div>
+        <form action="" name="myform" method="get">
+          name: <input type="text" name="name" /><br /><br />
+          email: <input type="text" name="email" /><br /><br />
+          language: <input type="text" name="lang" /><br /><br />
+          <input
+            type="submit"
+            value="set cookies"
+            name="set"
+            onclick="setCookies()"
+          />
+          <input
+            type="submit"
+            value="get cookies"
+            name="get"
+            onclick="getCookies(event)"
+          />
+        </form>
+      </div>
+    </div>
+    
+    <script type="module" src="./js/module.js"></script>
+  </body>
+</html>

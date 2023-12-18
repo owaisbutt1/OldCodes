@@ -1,0 +1,15 @@
+elementor
+classic editor
+child theme configurator
+woocommerce
+menu cart from wordpressw.org in divi
+SEO press
+site ground optimizer
+nitropack.io
+
+THREMES
+astra 
+child themes by child plugin
+child theme manually
+divi theme
+how to add two modules inline in one column in divi(for inline a modules)

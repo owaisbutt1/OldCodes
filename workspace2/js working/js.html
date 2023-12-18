@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css file/style.css">
+    <title>javascript</title>
+</head>
+<body id="body">
+  <div id="wrapper">
+    <div id="button" class="black">click & change the color</div>
+   <div id="content">
+      <h1>awais</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eveniet, nisi ipsa reprehenderit optio exercitationem quidem in porro modi at earum, dolores assumenda veniam, explicabo odio velit dignissimos placeat ab!
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ut omnis illum est harum impedit ipsum fugiat beatae vitae optio. Earum adipisci, sint similique eaque praesentium deserunt harum neque. Nisi!
+      </p>
+   </div>
+
+  </div>
+    <div class="mouseevent" onclick="fun()"></div> <br>
+    <div class="mouseevent" oncontextmenu="fun()"></div> <br>
+    <div class="mouseevent" ondblclick="fun()"></div> <br>
+    <div class="mouseevent" onmousedown="fun()" ></div> <br>
+    <div class="mouseevent" onmouseup="fun()"></div> <br>
+    <div class="mouseevent" onmouseover="fun()"></div> <br>
+    <div class="mouseevent" onmouseout="fun()"> </div> <br><br><br>
+    <div class="form">
+      <form action="" class="formkey">
+        <div> onkeydown: <input type="text" name="fstname" id="fstname" onkeydown="alert(this.value);"></div><br>
+        <div> onkeyup: <input type="text" name="lstname" id="lstname" onkeyup="alert(this.value);"></div><br>
+        <div> onkeypress: <input type="text" name="midname" id="midname" onkeypress="alert(this.value);"> </div><br>
+      </form>
+    </div><br><br>
+    <div class="form">
+      <form action="" id="formkey">
+        <div> onkeydown: <input type="text" name="fstname" id="fstname" onkeydown="document.getElementById('formkey').style.background=this.value"></div><br>
+        <div> onkeyup: <input type="text" name="lstname" id="lstname" onkeyup="document.getElementById('formkey').style.background=this.value"></div><br>
+        <div> onkeypress: <input type="text" name="midname" id="midname" onkeypress="document.getElementById('formkey').style.background=this.value"> </div><br>
+      </form>
+    </div><br> <br><br>
+    <div>
+      <button onclick="openwindow()">open window</button>
+      <button onclick="closewindow()">close window</button>
+    </div><br><br>
+
+
+  <script src="js file/style.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+#div1{
+margin:auto;
+width:70%;
+background-color: blue;
+height:100px;
+/* display:flex; */
+/* align-items: center; */
+text-align: center;
+justify-content: center;
+border:2px solid green;
+box-shadow: 5px 5px 20px black;
+
+}
+#heading1{
+    color:white;
+
+}
+.ankr1 {
+    display: list-item;
+    border: 2px solid blue;
+    width: 200px;
+    padding: 10px;
+    margin: 20px;
+    list-style: inside;
+    text-decoration: none;
+  }
+  .ankr1:hover{
+      background-color: coral;
+  }
+  .table1 {
+    border: 2px solid red;
+    width: 1100px;
+    padding: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  .tab1 {
+    margin: 20px auto;
+    width:100%;
+  }
+  .tab2 {
+    background-color: #f2f2f2;
+  }
+  .tab3:hover {
+    background-color: black !important;
+    color: white;
+  }

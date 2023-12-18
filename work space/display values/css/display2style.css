@@ -1,0 +1,198 @@
+.cont2 {
+  border: 2px solid black;
+  width: 900px;
+  margin: aut o;
+  /* display:flex; */
+  /* justify content is also use in previouse document name display value  */
+  /* justify-content: space-between; */
+  /* text-align: center; */
+  /* height: 300px; */
+  /* here we re using align item value of display property */
+  /* display: flex; */
+  /* align-items: center; */
+  /* align-items: baseline; */
+  /* align-items:stretch */
+  /* align-items:flex-start; */
+  /* align-items:flex-end; */
+  /* now here we use display property witn align-content  this is only work when we have two or more than two rows*/
+  /* display: flex; */
+  /* flex-wrap:wrap; */
+  /* padding: 10px; */
+  /* height: 400px; */
+  /* align-content: flex-start; */
+  /* align-content:center; */
+  /* align-content: space-around; */
+  /* align-content: space-between; */
+  /* align-content: space-evenly; */
+  /* now here we add a value of display align-cell which is use for alignment of one cell mesans one items weuse this value in item1 and item4 */
+  display: flex;
+  /* flex-direction: row; */
+  /* height: 400px; */
+  /* align-items: center; */
+}
+.items {
+  padding: 10px;
+  margin: 5px;
+  /* here we use flex grow to give width of items it is work internally it is also apply indivisually i also use it in item 3 &2 */
+  flex-grow: 1;
+}
+.item1 {
+  background-color: orange;
+  width: 50px;
+  /* align-self:stretch; */
+}
+.item2 {
+  background-color: chartreuse;
+  width: 50px;
+  /* font-size: 40px; */
+  /* uper font is used for implementation of align items with baseline */
+  flex-grow: 2;
+}
+.item3 {
+  background-color: goldenrod;
+  width: 50px;
+  /* order: -1; */
+  flex-grow: 2;
+}
+.item4 {
+  background-color: darkcyan;
+  width: 50px;
+  /* font-size: 10px; */
+  /* uper font is used for implementation of align items with baseline */
+  /* align-self:stretch; */
+  /* order: -2; */
+}
+
+/* .item5 { 
+  background-color:tomato;
+  width: 50px;
+}
+.item6 {
+  background-color:khaki;
+  width: 50px;
+}
+.item7 {
+  background-color: blueviolet;
+  width: 50px;
+}
+.item8 {
+  background-color:olive;
+  width: 50px;
+} */
+.ads1 {
+  border: 2px solid black;
+  background-color: lightgrey;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+.fgf {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  flex-basis: 100px;
+  /* use  of flex grow  with flexbasis use for min width  */
+  /* flex-basis also use internally in container */
+}
+.kjk1 {
+  background-color: aquamarine;
+  flex-basis: 200px;
+}
+.kjk2 {
+  background-color: blueviolet;
+}
+.kjk3 {
+  background-color: chartreuse;
+}
+.kjk4 {
+  background-color: cornflowerblue;
+}
+.kjk5 {
+  background-color: darkkhaki;
+}
+.awais1 {
+  border: 3px solid black;
+  background-color: lightgray;
+  display: flex;
+  /* width:600px; */
+  margin: 50px;
+}
+.hassaan1 {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 0px;
+  height: 60px;
+}
+.umeir {
+  background-color: cornflowerblue;
+  /* flex-shrink:1; */
+  /* incriment of flex-shrink is not supported when we use flex-basis with itself */
+  /* flex-basis:200px; */
+  /* we use flex for shorthand of grow, shrink,basis we can implement to comment out below property  */
+  /* flex:0 1 200px; */
+  /* we use below flex for use the margin auto property  */
+  flex: 0 0 200px;
+}
+.irtza {
+  background-color: aquamarine;
+  margin-left: auto;
+  margin-right: 30px;
+}
+.zeeshan {
+  background-color: darkkhaki;
+  margin-right: 30px;
+}
+
+.bilal {
+  background-color: blueviolet;
+  /* i comment out below property due to the use of margin auto c mrgin auto dont work when grow property isin work  */
+  /* flex-grow:1;  */
+  margin-right: 30px;
+}
+.go {
+  border: 3px solid black;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 4px;
+}
+.goa {
+  padding: 10px;
+  height: 50px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+}
+.gone1 {
+  background-color: blueviolet;
+}
+.gone2 {
+  background-color: cornflowerblue;
+  display: flex;
+}
+
+.gone3 {
+  background-color: aquamarine;
+}
+.has {
+  background-color: red;
+  flex-grow: 1;
+  margin: 5px;
+}
+/* i have lost  my code  */
+.edee {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+/* we have two oppertunities to get hover content by paseudo element  after or before and this elements are not used with <img> by giving paseudo class in element which we required  */
+
+.qaqa:hover .edee {
+  display: block;
+}
+.qaqa:hover::after{
+  content:"hello world";
+  background-color: greenyellow;
+}

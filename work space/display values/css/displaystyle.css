@@ -1,0 +1,138 @@
+header {
+  margin: auto;
+  width: 1200px;
+  border: 2px solid black;
+}
+.hdr1 {
+  margin: auto;
+  width: 40px;
+  display: block;
+}
+.hdr2 {
+  text-align: center;
+  margin: 0px;
+}
+.box {
+  border: 2px solid black;
+  background-color: grey;
+  margin: 18px;
+  display: inline-block;
+  width: 360px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.cont1 {
+  margin: auto;
+  width: 1200px;
+}
+.fstul {
+  border: 2px;
+}
+li {
+  border: 2px solid black;
+  display: inline;
+  width: 500px;
+}
+.sp2 {
+  display: block;
+  border: 2px solid brown;
+  width: 400px;
+}
+.sp3 {
+  padding: 5px;
+  border: 2px solid gray;
+  display: inline-block;
+  width: 250px;
+}
+.ankr1 {
+  display: list-item;
+  border: 2px solid blue;
+  width: 200px;
+  padding: 10px;
+  margin: 20px;
+  list-style: inside;
+  text-decoration: none;
+}
+.flex-box-direction {
+  /* display: flex; */
+  /* flex-direction:column; */
+  /* flex-direction:column-reverse;  */
+  /* flex-direction:row;  */
+  /* flex-direction: row-reverse;  */
+
+  display: flex;
+  /* flex-wrap:nowrap; */
+  /* flex-wrap:wrap;  */
+  /* flex-wrap:wrap-reverse; */
+  /* FLEX-FLOW IS USE FOR DIRECTION AND WRAP BOTH */
+  /* display: flex; */
+  /* flex-flow:column wrap-reverse; */
+  /* flex-flow:column */
+  border: 3px solid black;
+  /* these are use for wraps,flex directions */
+  margin: 50px;
+  /* height:190px; */
+  /* width: 300px; */
+  /* padding: 10px; */
+  /*{{{{{{{{{ this width is use for justifing }}}}}}}}*/
+  width: 1200px;
+  /* margin:110px; */
+  /* justify-content: center; */
+  /* justify-content: flex-end; */
+  justify-content: space-between;
+  /* justify-content: space-around; */
+  /* {{{{{{{{space evenly use for equal spacing}}}}}}} */
+  /* justify-content: space-evenly; */
+  /* justify-content: space-around; */
+}
+.item1 {
+  background-color: red;
+}
+.item2 {
+  background-color: green;
+}
+.item3 {
+  background-color: chartreuse;
+}
+
+.item4 {
+  background-color: cadetblue;
+}
+.item5 {
+  background-color: orange;
+}
+.item6 {
+  background-color: violet;
+}
+.item7 {
+  background-color: black;
+}
+.item8 {
+  background-color: brown;
+}
+.items {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 5px;
+  width: 100px;
+  text-align: center;
+  padding: 7px;
+}
+.table1 {
+  border: 2px solid red;
+  width: 1100px;
+  padding: 5px;
+  padding: 10px;
+  text-align: center;
+}
+.tab1 {
+  margin: 20px auto;
+}
+.tab2 {
+  background-color: #f2f2f2;
+}
+.tab3:hover {
+  background-color: black !important;
+  color: white;
+}

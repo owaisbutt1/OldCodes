@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>hello</h1>
+    <p id="demo"></p>
+    <div class="demo1" onclick="fun()">hi onclick mouse event</div>
+    <div class="demo1" oncontextmenu="fun1()">hi oncontextmenu mouse event</div>
+    <div class="demo1" ondblclick="fun2()">hi ondblclick mouse event</div>
+    <div class="demo1" onmousedown="fun3()">hi onmousedown mouse event</div>
+    <div class="demo1" onmouseup="fun4()">hi onmouseup mouse event</div>
+    <div>
+        <h1>we can learn diffeence by using these input fields
+        </h1>
+        <p>onkeydown</p>
+        <input type="text" onkeydown="alert(this.value);">
+        <p>onkeyup</p>
+        <input type="text" onkeyup="alert(this.value);">
+        <p>onkeypress</p>
+        <input type="text" onkeypress="alert(this.value);">
+    </div>
+    <div>
+        <button onclick="windowopen()">open window</button>
+        <button onclick="windowclose()">close window</button>
+    </div><br>
+    <img src="images/img_5.jpg" id="img1">
+
+    <div></div>
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>

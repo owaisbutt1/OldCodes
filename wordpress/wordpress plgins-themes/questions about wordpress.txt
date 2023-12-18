@@ -1,0 +1,8 @@
+use of jquery
+how to make pop up
+how to send email in wordpress(mailgun may be used in this)
+how to submit a form
+woocomerce website
+seo in divi
+media query
+hotjar ( i even dont now what is its use in wordpress but i know that it is use in wordpress)

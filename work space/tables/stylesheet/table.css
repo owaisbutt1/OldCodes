@@ -1,0 +1,104 @@
+#table1,
+th,
+td {
+  border-radius: 5px;
+  padding: 10px;
+  border-spacing: 20px;
+}
+th,
+td {
+  border-color: red;
+  border-style: solid;
+}
+th {
+  text-align: left;
+}
+tr:nth-child(even) {
+  background-color: grey;
+}
+
+th:nth-child(even) {
+  background-color: grey;
+}
+td:nth-child(even) {
+  background-color: rgb(128, 128, 128);
+}
+td:hover {
+  color: brown;
+  background-color: chartreuse;
+}
+th:hover {
+  color: brown;
+  background-color: chartreuse;
+}
+tr:hover {
+  background-color: chartreuse;
+}
+tr:nth-child(odd):hover {
+  color: brown;
+  background-color: chartreuse;
+}
+.table4:hover {
+  background-color: chartreuse;
+}
+.list0 {
+  list-style-type: none;
+}
+.list1 {
+  display: flex;
+  margin: 0 -5px; /* this */
+  list-style-type: none;
+}
+.item {
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+}
+.images {
+  width: 800px;
+}
+.img1 > img {
+  width: 200px;
+}
+.img2 > img {
+  width: 200px;
+}
+.img3 > img {
+  width: 200px;
+}
+.images .img1 {
+  float: left;
+}
+.images .img2 {
+  float: left;
+}
+.images .img3 {
+}
+.sec1 {
+  width: 1100px;
+  height: 350px;
+  border: 1px solid black;
+}
+.art1 {
+  width: 300px;
+  float: left;
+}
+.art2 {
+  width: 500px;
+  float: left;
+}
+.aside1 {
+  width: 200px;
+  float: left;
+  border: 2px solid red;
+  background-color: grey;
+  margin-left: 30px;
+  text-align: center;
+}
+
+input:focus {
+  background-color: yellow;
+}
+::placeholder {
+  color: red;
+}

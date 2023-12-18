@@ -1,0 +1,64 @@
+.centerdiv{
+    display: flex;
+    justify-content: center;
+}
+.aq {
+    text-align:center;
+    border:5px solid rgb(255, 162, 71);
+    padding:10px;
+    color:blue;
+    background-color:chartreuse;
+   
+    
+    width:303px;
+}
+.sw{
+    margin-left:0;
+}
+.de {
+     font-size:18px  
+
+}
+.fr{
+    margin-left:20px;
+}
+.awais01:link{
+  color:red;
+  text-decoration:none;
+  background-color: red;
+}
+.awais01:hover{
+    background-color:orange;
+    text-decoration:underline;
+    color:yellow;
+}
+.awais01:active{
+    color:brown;
+}
+.awais01:visited{
+    color:chartreuse;
+}
+.hy:visited{
+    color:chartreuse;
+
+}
+.ju{
+
+
+
+}
+.machine{
+    width:400px;
+    height: 300px;
+}
+.doctor{
+    background: url( '../img/doctors-3.jpg');
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-attachment:fixed;
+    width:700px;
+    height:400px
+}
+.eagle3{
+    width:500px;
+}
